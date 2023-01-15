@@ -12,13 +12,12 @@ body{
 .navigation-header{
     display: flex;
     justify-content: space-between;
-    width: 1250px;
     margin: 0 auto;
 }
 .navigation-buttons{
     display: flex;
+    align-items: center;
     gap: 30px;
-    margin-right: 50px;
     list-style: none;
     font-size: 18px;
     color: black;
@@ -39,8 +38,6 @@ a{
     color: #727272;
  }
  .top-view{
-    width: 862px;
-    height: 225px;
     text-align: center;
     margin: 0 auto;
     margin-top: 80px;
@@ -63,7 +60,7 @@ a{
  -----------------top banner------
  ---------------------------------------- */
 .top-banner img{
-    width: 1080px;
+    width: 100%;
 }
 .top-banner{
     display: flex;
@@ -81,13 +78,8 @@ a{
 }
 
 .team-work img{
-    height: 342px;
-    width: 342px;
-}
-.team-info{
-    margin-left: 73px;
-    width: 537px;
-    height: 304px;
+    height: 100%;
+    width: 100%;
 }
 .team-info-para{
     font-size: 16px;
@@ -95,7 +87,6 @@ a{
 .teamwork-section{
     display: flex;
     align-items: center;
-    width: 1080px;
     margin: 0 auto;
     margin-top: 84px;
     
@@ -103,8 +94,7 @@ a{
 .team-images{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap:  24px;
-    grid-row-gap: 24px;
+    grid-gap: 30px;
 }
 
 /* ------------------------------------------------
@@ -149,7 +139,9 @@ a{
     margin-top: 130px;
     margin-bottom: 130px;
  }
- 
+ .architect-img{
+  width: 500px !important;
+ }
 
  /* ------------------------------------------
  ----------------next section fact---------------------
@@ -163,7 +155,9 @@ a{
   ------------------------------- */
   .customer-boxes{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
   }
   .box{
     border: 1px solid #FF900E;
@@ -172,7 +166,7 @@ a{
     height: 241px;
     padding-top: 45px;
     text-align: center;
-    margin-bottom: 180px;
+    margin:20px auto ;
   }
 
   /* ---------------------------------
@@ -183,8 +177,6 @@ a{
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 542px;
-    height: 129px;
     margin: 0 auto;
   }
   .sponsor-images{
@@ -211,5 +203,60 @@ a{
   -------------------media query---------------
   ---------------------------------------------- */
   @media screen and (max-width:576px){
-    
+    .teamwork-section{
+      display: block;
+      
   }
+  .team-work{
+    display: block;
+  }
+  .team-work img{
+    width: 100%;
+}
+.feature-about{
+  display: block;
+  margin: 0 auto;
+}
+.customer-boxes{
+  display: block;
+  margin: 0 auto;
+}
+.sponsor-images{
+  display: block;
+  margin: 0 auto;
+}
+.sponsor-images li{
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+}
+.navigation-header{
+  display: block;
+  margin: 0 auto;
+}
+.navigation-buttons{
+  display: block;
+  list-style: none;
+  font-size: 18px;
+  color: black;
+}
+.team-images{
+  display: block;
+
+}
+.team-images img{
+  margin-bottom: 30px;
+  width: 100%;
+}
+.architect-img{
+  width: 80%;
+
+ }
+.architect-img img{
+  width: 100%;
+ }
+ .box{
+  width: 100%;
+ 
+  }
+}
