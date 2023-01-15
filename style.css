@@ -32,14 +32,14 @@ a{
  ----------------------------------- */
  .topview-para{
     font-size: 18px;
+    color: #727272;
  }
  .top-view{
     width: 862px;
     height: 225px;
     text-align: center;
-    align-items: center;
     margin: 0 auto;
-    margin-top: 105px;
+    margin-top: 80px;
  }
  .explore-more-btn{
     font-size: 20px;
@@ -53,7 +53,7 @@ a{
  .buttons{
     display: flex;
     justify-content: center;
-    margin: 70px auto;
+    margin: 30px auto;
  }
  /* ----------------------------------
  -----------------top banner------
@@ -274,7 +274,7 @@ a{
     
      }
      .facts{
-        margin-top:600px;
+        margin-top:800px;
         width: 190px;
         margin-bottom: 70px;
       }
